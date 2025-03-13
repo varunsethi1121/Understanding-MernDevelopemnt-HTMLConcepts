@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Emmets</title>
+    <link rel="shortcut icon" href="..//htmlConcepts/image.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- SOME COMMONLY USED AND VERY USEFULL EMMET ABBREVATIONS -->
+    <h3 class="importentHeading">
+        <p class="content"><i>WHILE WRITING EMMET ABBREVATION NEVER USE ANY KIND OF WHITE SPACE IN BETWEEN</i></p>
+    </h3>
+    <hr>
+    <!-- div.grandParent>div.currentParent>div.futureParent -->
+    <div class="grandParent">
+        <div class="currentParent">
+            <div class="futureParent"></div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- div.currentParent>div.firstChild+div.secondChild -->
+    <div class="currentParent">
+        <div class="firstChild"></div>
+        <div class="secondChild"></div>
+    </div>
+    <hr>
+
+    <!-- div.currentParent>div.firstChild#boyChild+div.secondChild#girlChild -->
+    <div class="currentParent">
+        <div class="firstChild" id="boyChild"></div>
+        <div class="secondChild" id="girlChild"></div>
+    </div>
+    <hr>
+
+    <!-- div.unorderedList>ul>li*3 -->
+    <div class="unorderedList">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- div.unorderedList>ul>liitemName$*3 -->
+    <div class="unorderedList">
+        <ul>
+            <li class="itemName1"></li>
+            <li class="itemName2"></li>
+            <li class="itemName3"></li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- div.unorderedList>ul>liitemName$@-*3 -->
+    <div class="unorderedList">
+        <ul>
+            <li class="itemName3"></li>
+            <li class="itemName2"></li>
+            <li class="itemName1"></li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- div.unorderedList>ul>liitemName$@3*3 -->
+    <div class="unorderedList">
+        <ul>
+            <li class="itemName3"></li>
+            <li class="itemName4"></li>
+            <li class="itemName5"></li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- h1[title=itemName$]{ItemCount$}*3 -->
+    <h1 title="titleName1">ItemCount1</h1>
+    <h1 title="titleName2">ItemCount2</h1>
+    <h1 title="titleName3">ItemCount3</h1>
+    <hr>
+
+    <!-- div.addingText>p.outterParagraph{clickMe}+p.innerParagraph{to Follow} -->
+    <div class="addingText">
+        <p class="outterParagraph">clickme</p>
+        <p class="innerParagraph">to Follow</p>
+    </div>
+</body>
+
+</html>
