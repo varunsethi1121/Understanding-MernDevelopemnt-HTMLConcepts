@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Bsics</title>
+    <link rel="shortcut icon" href="./image.png" type="image/x-icon">
+</head>
+<body>
+    <div class="formSection">
+        <form action="/server"> <!-- ACTION IS USED TO LOCATE THE ADDRESS WHERE THE INFORMATION OF THE FORM IS TO BE STORED  -->
+            <label for="username" class="userName">Enter your Username: </label>
+            <input type="text" id="username" placeholder="varun_sethi_1">
+            <br>
+            <br>
+            <label for="password" class="passWord">Enter your Password: </label>
+            <input type="password" id="password" placeholder="password">
+            <br>
+            <br>
+            <label for="age" class="currentAge">Enter your current age: </label>
+            <input type="number" id="age" placeholder="24">
+            <br>
+            <br>
+            <button type="submit">Submit Button</button>
+            <button type="button">Still Button</button>
+            <button type="reset">Reset Button</button>
+            <br>
+            <h3 class="heading">Button using Input</h3>
+            <div class="buttonUsingInput">
+                <input type="button" value="Still Button">
+                <input type="submit" value="Submit Button">
+            </div>
+        </form>
+    </div>
+    <hr>
+    <hr>
+    <h1 class="mainHeading" style="text-align: center;">Customized Search Option</h1>
+    <h2 class="heading" style="text-align: center;"><i>Assignment 4 Solution</i></h2>
+    <div class="assignmentSolution">
+        <!-- https://www.myntra.com/shirt?rawQuery=Shirt -->
+        <form action="https://www.myntra.com/shirt">
+        <label for="customizedSearch">Enter which type of shirt you want on Myntra: </label>
+        <input type="text" id="customizedSearch" placeholder="Search" name="rawQuery">
+        <br>
+        <br>
+        <button>Search</button>
+        </form>
+    </div>
+</body>
+</html>
