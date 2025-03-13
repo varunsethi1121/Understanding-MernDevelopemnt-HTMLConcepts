@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Advanced</title>
+    <link rel="shortcut icon" href="./image.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="formAdvancedFeatures">
+        <form action="/server">
+            <div class="checkboxFeature">
+                <h2 class="subHeading" style="text-align: center;">Check Box
+                    <br>
+                    <p><i>
+                            <h4 style="text-align: center;">You can selct multiple checkbox at a particular time</h4>
+                        </i></p>
+                </h2>
+                <input type="checkbox" id="approval" name="verify">
+                <label for="approval">I am 18 Yrs +</label>
+                <br>
+                <button>Submit</button>
+            </div>
+            <hr>
+            <div class="radioButtonFeature">
+                <h2 class="subHeading" style="text-align: center;">Radio Box
+                    <br>
+                    <p><i>
+                            <h4 style="text-align: center;">You can selct only one radio button at a particular time
+                            </h4>
+                        </i></p>
+                </h2>
+                <!-- HERE NAME IS UDED TO COMBINED MULTIPLE RADIO BUTTON UNDER SINGLE HEADING FIELD -->
+                <!-- IF WE WILL NOT HAVE VALUE FIELD IN UPDATED URL GENDER=ON WILL BE DISPLAYED AND IF WE WILL HAVE VALUE FIELD UPDATED URL WOULD BE GENDER=MALE/FEMAL -->
+                <input type="radio" name="gender" id="male" value="m">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="f">
+                <label for="female">Female</label>
+                <br>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="dropdownElement">
+        <h2 class="subHeading" style="text-align: center;">Drop Down
+            <br>
+            <p><i>
+                    <h4 style="text-align: center;">You can selct only one dropdown at a particular time
+                    </h4>
+                </i></p>
+        </h2>
+        <form action="/server">
+            <label for="state">Select your current state: </label>
+        <select name="state" id="state">
+            <option value="">Select your state</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="PB">Punjab</option>
+            <!-- <option value="DL" selected>Delhi</option> -->
+             <!-- SELECTED WILL SELECT DL AS A DEFAULT ENTRY TO STATE IN URL -->
+        </select>
+        <br>
+        <button>Submit</button>
+        </form>
+    </div>
+    <hr>
+    <div class="rangeElement">
+        <h2 class="subHeading" style="text-align: center;">Range
+            <br>
+            <p><i>
+                    <h4 style="text-align: center;">You can selct only one value with the help of slider
+                    </h4>
+                </i></p>
+        </h2>
+        <form action="/server">
+            <label for="marks">Select the marks Obtained: </label>
+            <input type="range" name="marks" id="marks" min="-10" max="40">
+            <br>
+            <button>Submit</button>
+        </form>
+    </div>
+    <hr>
+    <div class="textAreaElement">
+        <h2 class="subHeading" style="text-align: center;">Text Area
+            <br>
+            <p><i>
+                    <h4 style="text-align: center;">You can selct only one dropdown at a particular time
+                    </h4>
+                </i></p>
+        </h2>
+        <form action="/server">
+            <!-- SIZE OF TEXT ARE IS BY DEFAULT EQUAL TO 2 ROWS AND 10 COLUMNS BUT WE CAN CUSTOMIZED IT BY ADDING ROWS AND COLS -->
+            <label for="txtarea">Enter your valuable Feedback: </label>
+            <textarea name="Feedback" id="txtarea" rows="5" cols="50"></textarea>
+            <br>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
